@@ -1,3 +1,3 @@
-import Expenses from './components/ExpensesTable'
+import Expenses from './containers/ExpensesContainer'
 
 export default Expenses
