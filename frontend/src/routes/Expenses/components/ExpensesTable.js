@@ -27,6 +27,7 @@ export const ExpensesTable = () => (
       <th>Note</th>
       <th>Timestamp</th>
       <th>User</th>
+      <td/>
     </tr>
     </thead>
     <tbody>
