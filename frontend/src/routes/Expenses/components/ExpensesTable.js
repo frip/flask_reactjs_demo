@@ -1,4 +1,5 @@
 import React from 'react'
+import ExpensesRow from './ExpensesRow'
 
 const expenses = {
   expenses_list: [{
@@ -29,13 +30,7 @@ export const ExpensesTable = () => (
     </thead>
     <tbody>
     {expenses.expenses_list.map((exp, i) => (
-      <tr key={i}>
-        <td>{exp.id}</td>
-        <td>{exp.amount}</td>
-        <td>{exp.note}</td>
-        <td>{exp.timestamp}</td>
-        <td>{exp.user}</td>
-      </tr>
+      <ExpensesRow expense={exp} key={i}/>
     ))}
     </tbody>
   </table>
