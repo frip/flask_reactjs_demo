@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import setup
 
@@ -12,6 +13,10 @@ setup(
     include_package_data=True,
     install_requires=[
         'flask',
+        'flask_httpauth',
+        'flask_sqlalchemy',
+        'marshmallow',
+        'simplejson'
     ],
     tests_require=[
         'pytest',
