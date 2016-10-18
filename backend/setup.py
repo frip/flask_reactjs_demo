@@ -15,6 +15,7 @@ setup(
         'flask',
         'flask_httpauth',
         'flask_sqlalchemy',
+        'flask-cors',
         'marshmallow',
         'simplejson'
     ],

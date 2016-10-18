@@ -7,10 +7,12 @@ from flask import Flask, jsonify, request, make_response
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 from flask_httpauth import HTTPBasicAuth
+from flask_cors import CORS
 from marshmallow import Schema, fields, ValidationError
 
 
 app = Flask(__name__)
+CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///expenses.db'
 db = SQLAlchemy(app)
 auth = HTTPBasicAuth()
