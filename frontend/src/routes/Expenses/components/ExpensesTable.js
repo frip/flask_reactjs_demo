@@ -1,4 +1,5 @@
 import React from 'react'
+import {Table} from 'react-bootstrap'
 import ExpensesRow from './ExpensesRow'
 
 const expenses = {
@@ -18,7 +19,7 @@ const expenses = {
 }
 
 export const ExpensesTable = () => (
-  <table>
+  <Table striped bordered condensed hover>
     <thead>
     <tr>
       <th>Id</th>
@@ -33,7 +34,7 @@ export const ExpensesTable = () => (
       <ExpensesRow expense={exp} key={i}/>
     ))}
     </tbody>
-  </table>
+  </Table>
 )
 
 export default ExpensesTable
