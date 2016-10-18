@@ -1,9 +1,9 @@
 import React from 'react'
-import {Table} from 'react-bootstrap'
+import {Table, Button} from 'react-bootstrap'
 import ExpensesRow from './ExpensesRow'
 
 export const ExpensesTable = (props) => {
-  const {expenses} = props
+  const {expenses, loadExpenses} = props
   return (<Table striped bordered condensed hover>
     <thead>
     <tr>
@@ -12,7 +12,7 @@ export const ExpensesTable = (props) => {
       <th>Note</th>
       <th>Timestamp</th>
       <th>User</th>
-      <td/>
+      <td><Button onClick={loadExpenses}>Load</Button></td>
     </tr>
     </thead>
     <tbody>
